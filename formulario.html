@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio Formulario HTML</title>
+</head>
+<body style="background-color: #f5f5dc; text-align: center; padding: 20px;">
+
+  <header>
+       <h1 style="color: #722F37; text-align: left;">Formulario de Contacto</h1>
+       <p style="text-align: left; color: #8b4513;"> Menú de Interacción</p>
+       <nav>
+        <ul>
+          <li><a style="color: black;" href="index.html">Inicio</a></li>
+          <li><a style="color: black;" href="errores.html">Página web corregida</a></li>
+          <li><a style="color: black;" href="galeria.html">Galería de fotos</a></li>
+          <li><a style="color: black;" href="conferencias.html">Conferencias</a></li>
+        </ul>
+      </nav>
+       <h2 style="color: #8b4513;;">Por favor, completa el formulario con tus detalles de contacto.</h2>
+  </header>
+
+
+  <form action="https://www.utpl.edu.ec/" method="GET" style="margin: 0 auto; max-width: 400px; padding: 20px;">
+
+    <label for="titulo" style="margin-bottom: 10px;">Título:</label>
+    <select id="titulo" name="titulo" required style="margin-bottom: 15px;">
+       <option value="" disabled selected>Select a title</option>
+       <option value="Sr.">Sr.</option>
+       <option value="Sra.">Sra.</option>
+       <option value="Dr.">Dr.</option>
+       <option value="Dra.">Dra.</option>
+</select><br>
+
+
+    <label for="nombres" style="margin-bottom: 10px;">Nombres:</label>
+    <input type="text" id="nombres" name="nombres" required autofocus style="margin-bottom: 15px;"><br>
+
+    <label for="email" style="margin-bottom: 10px;">Email:</label>
+    <input type="email" id="email" name="email" required style="margin-bottom: 15px;"><br>
+
+    <label for="web" style="margin-bottom: 10px;">Web:</label>
+    <input type="url" id="web" name="web" placeholder="URL de tu página web personal" style="margin-bottom: 15px;"><br>
+
+    <label for="fecha" style="margin-bottom: 10px;">Fecha de Registro:</label>
+    <input type="date" id="fecha" name="fecha" style="margin-bottom: 15px;"><br>
+
+    <label for="hora" style="margin-bottom: 10px;">Hora:</label>
+    <input type="time" id="hora" name="hora" style="margin-bottom: 15px;"><br>
+
+    <label for="edad" style="margin-bottom: 10px;">Edad:</label>
+    <input type="number" id="edad" name="edad" min="-18" max="65" style="margin-bottom: 15px;"><br>
+
+    <label for="contacto" style="margin-bottom: 10px;">Contacto:</label>
+    <input type="tel" id="contacto" name="contacto" style="margin-bottom: 15px;"><br>
+
+    <label for="color" style="margin-bottom: 10px;">Color favorito:</label>
+    <input type="color" id="color" name="color" style="margin-bottom: 15px;"><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+  <footer style="background-color: #8b4513; color: #ffffff; padding: 10px;">
+    <p>© 2023 Fmejia666. Tecnologías web. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
